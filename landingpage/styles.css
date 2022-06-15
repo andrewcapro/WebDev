@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+.unit{
+    display: flex;
+    border: 4px solid green;
+    flex-direction: column;
+}
+
+.container-header{
+    background: #1F2937;
+    padding: 24px;
+    height: 200px;
+    margin: 25px;
+    margin-bottom: 0;
+    border: 4px solid red;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-top{
+    background: #1F2937;
+    padding: 24px;
+    height: 350px;
+    margin: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 4px solid red;
+    gap: 125px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;  
+}
+
+.container-center{
+    background: #1F2937;
+    padding: 24px;
+    height: 350px;
+    margin: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 4px solid red;
+    gap: 125px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center; 
+}
+
+.container-bottom{
+    background-image: url("https://lh3.googleusercontent.com/pw/AM-JKLV1iP_o-19-962bGVgElWfKX2ZgrMn8SThTVg2VZlvBbtXmT5YC-ibnXCsgNa5iOhCYhjn041XLvjofHe1wJkefxNP1pBQi1iwmZ1_7EPQlgP4VydyTRA3phx5asZ2p0Y_Tly8-Vg6O7BFvJq35MrMCtg=w958-h719-no?authuser=2");
+    padding: 24px;
+    height: 400px;
+    margin: 25px;
+    margin-top: 0;
+    border: 4px solid red;
+    gap: 125px;
+    display: flex;
+}
+
+.header-left{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 32px;
+    border: 4px solid blue;
+    font-weight: 900;
+    font-size: 32px;
+    color: white;
+    text-align: left;
+}
+
+.header-right{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 70px;
+    border: 4px solid blue;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: right;
+}
+
+.header-desc, h1{
+    font-size: 48px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: 4px solid blue;
+}
+
+.header-desc, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgray;
+    font-size: 28px;
+}
+
+
+.header-video{
+    border: 4px solid blue;
+}
+
+a:visited, a:hover, a:active{
+    color: gray;
+}
+
+a:link{
+    color: darkgray;
+}
