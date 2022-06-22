@@ -56,7 +56,7 @@ h1{
 }
 
 .text{
-    font-weight: 500;
+    font-weight: 600;
     width: 90%;
     font-size: 1.5rem;
 }
@@ -81,7 +81,7 @@ p {
 .form-title{
     width: 100%;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .input {
@@ -89,6 +89,7 @@ p {
     flex-flow: column wrap;
     width: 40%;
     font-size: 1rem;
+    font-weight: 600;
     text-transform: uppercase;
     opacity: 50%;
 }
@@ -96,7 +97,6 @@ p {
 button {
     background-color: rgba(0, 0, 0, 0);
     color: var(--color);
-    font-weight: 700;
     font-size: 1.2em;
     border: 2px solid var(--color);
     border-radius: 5px;
