@@ -9,6 +9,34 @@
     </head>
 
     <body>
-        
+        <div>
+            <header>Library</header><br>
+        </div>
+        <div>
+            <form id="form">
+                <label for="title">Book Title:</label>
+                <input type="text" name="title" id="title" placeholder="1984" required><br><br>
+
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" placeholder="George Orwell" required><br><br>
+
+                <label for="pages">How many pages?</label>
+                <input type="number" name="pages" id="pages" placeholder="328" required min="0"><br><br>
+
+                <label for="read">Read it?</label><br>
+                <input type="checkbox" name="read" id="read"><label for="read" >Yes</label><br>
+
+                <button type="button" name="button" id="btn" onclick="addBookToLibrary()" value="Add">Submit</button>
+            </form>
+        </div>
+        <table id="show">
+            <tr>
+                <th>BOOK</th>
+                <th>AUTHOR</th>
+                <th>PAGES</th>
+                <th>READ</th>
+            </tr>
+        </table>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,16 +1,45 @@
-let myLibrary = [];
+// let myLibrary = [];
 
-class Book {
-  // the constructor...
-  constructor(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+// function Book(title, author, pages, read) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+// }
+
+var list1 = [];
+var list2 = [];
+var list3 = [];
+var list4 = [];
+
+var n = 1;
+var x = 0;
+
+function addBookToLibrary(){
+  var AddRown=document.getElementById('show');
+  var NewRow=AddRown.insertRow(n);
+
+  list1[x] = document.getElementById("title").value;
+  list2[x] = document.getElementById("author").value;
+  list3[x] = document.getElementById("pages").value;
+  if (document.querySelector('input[name="read"]:checked')){
+    list4[x] = "yes";
   }
+  else{
+    list4[x] = "no";
+  }
+
+  var cel1 = NewRow.insertCell(0);
+  var cel2 = NewRow.insertCell(1);
+  var cel3 = NewRow.insertCell(2);
+  var cel4 = NewRow.insertCell(3);
+
+  cel1.innerHTML = list1[x];
+  cel2.innerHTML = list2[x];
+  cel3.innerHTML = list3[x];
+  cel4.innerHTML = list4[x];
+  
+  n++;
+  x++;
 }
 
-function addBookToLibrary() {
-  // do stuff here
-    new constructor(title, author, pages, read)
-}
