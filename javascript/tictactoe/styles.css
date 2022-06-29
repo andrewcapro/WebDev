@@ -1,0 +1,20 @@
+/* basic reset */
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.squares {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.square {
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(0, 162, 255);
+    padding: 20px;
+    margin-top: 20px;
+}
