@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo List with LocalStorage</title>
+	<!-- CSS Import -->
+	<link rel="stylesheet" href="main.css" />
+	<!-- End of CSS Import -->
+</head>
+<body>
+	<!-- App Wrapper -->
+	<main class="app">
+		<section class="create-project">
+			<h3>CREATE A PROJECT</h3>
+			<form id="new-project-form">
+				<h4>What's your project name?</h4>
+				<input 
+					type="text"
+					placeholder="e.g. homework.."
+					name="pcontent"
+					id="pcontent">
+				<input type="submit" value="Add project">				
+			</form>
+			<div class="project-list">
+				<!-- <div class="project-item">
+					<label>
+						<input type="radio" name="projectselector">
+					</label>
+					<div class="pcontent">
+						<input type="text" value="test" readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+			</div>
+		</section>
+		<!-- End of New Todo -->
+
+		<!-- Todo List -->
+		<section class="create-todo">
+			<h3>CREATE A TODO LIST</h3>
+			<form id="new-todo-form">
+				<h4>What's your todo?</h4>
+				<input 
+					type="text"
+					placeholder="e.g. math problems.."
+					name="tcontent"
+					id="tcontent">
+				<input type="submit" value="Add todo">				
+			</form>
+			<div class="todo-list">
+				<h3>epic</h3>
+			</div>
+		</section>
+		<!-- End of Todo List -->
+
+	</main>
+	<!-- End of App Wrapper -->
+
+	<!-- JS Import -->
+	<script src="main.js"></script>
+	<!-- End of JS Import -->
+</body>
+</html>

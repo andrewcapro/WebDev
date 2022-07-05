@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <title>ToDo List</title>
+   </head>
+   <body>
+    <header id="header">
+      <h3 id="title">Your Todo List</h3>
+    </header>
+    <div id="container">
+      <div id="projects">
+
+        <form id="addproject">
+          <input type="text" id="projectname" placeholder="New project..">
+          <input type="submit" id="projectsubmit">
+        </form>
+
+        <br>
+
+        <ul id="projectlist"></ul>
+      </div>
+      <div id="task">
+
+        <form id="addtask">
+          <input type="text" id="taskname" placeholder="New task..">
+          <input type="date" id="taskdate">
+
+          <select id="urgency">
+            <option value="urgent">Urgent</option>
+             <option value="not-urgent">Not Urgent</option>
+          </select>
+
+          <input type="text" id="projectindex" placeholder="project name..">
+          <button id="tasksubmit">Submit </button>
+        </form>
+
+        <br>
+      </div>
+    </div>
+    <script src="main.js"></script>
+   </body>
+ </html>
