@@ -36,10 +36,12 @@ window.addEventListener('load', () => {
             e.target.reset();
 
             DisplayProjects();
+			displayTodos();
         }
     })
 
 	DisplayProjects()
+	displayTodos()
 })
 
 function DisplayProjects () {
@@ -83,7 +85,7 @@ function DisplayProjects () {
         currentProject = null;
 
         input.addEventListener('change', (e) => {
-            localStorage.setItem('projects', JSON.stringify(projects));
+			localStorage.setItem('projects', JSON.stringify(projects));
             currentProject = input.id;
             switchProject();
             // DisplayProjects();
@@ -113,6 +115,38 @@ function DisplayProjects () {
 
 function switchProject() {
     const todoList = document.querySelector('.todo-list');
-    todoList.innerHTML = '';
+    displayTodos();
     console.log(todos);
+}
+
+function displayTodos () {
+	const todoList = document.querySelector('.todo-list');
+	todoList.innerHTML = "";
+	
+	todos.forEach(todo => {
+		const todoItem = document.createElement('div');
+		todoItem.classList.add('todo-item');
+		const content = document.createElement('div');
+		const actions = document.createElement('div');
+		const deleteButton = document.createElement('button');
+
+		content.classList.add('tcontent');
+		actions.classList.add('actions');
+		deleteButton.classList.add('delete');
+
+		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+		deleteButton.innerHTML = 'Delete';
+
+		actions.appendChild(deleteButton);
+		todoItem.appendChild(content);
+		todoItem.appendChild(actions);
+		
+		todoList.appendChild(todoItem);
+
+		deleteButton.addEventListener('click', (e) => {
+			todos = todos.filter(t => t != project);
+			localStorage.setItem('todos', JSON.stringify(todos));
+			displayTodos()
+		})
+	})
 }
