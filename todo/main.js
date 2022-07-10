@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 		// Reset the form
 		e.target.reset();
 
-		DisplayProjects()
+		DisplayProjects();
 	})
 
     newTodoItem.addEventListener('submit', e => {
