@@ -1,7 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid black;
+    color: #BE2C6B;
+    background-color: #E5C44D;
+    font-size: 2rem;
+    /* border: 1px solid black; */
 }
 
 header {
@@ -13,11 +16,18 @@ header {
     margin-left: 65vw;
 }
 
+#weather {
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+
 input[type="search"]{
     padding-left: 20px;
     border-radius: 20px;
+    border-color: #BE2C6B;
     width: 30vw;
     height: 10vh;
+    font-size: 1.5rem;
 }
 
 #weather {
