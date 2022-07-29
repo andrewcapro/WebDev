@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-export default class ExperienceItems extends Component{
+export default class PersonalItems extends Component{
 
     render(){
         const {onChangePersonal} = this.props;
