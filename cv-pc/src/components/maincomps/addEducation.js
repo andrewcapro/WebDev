@@ -24,7 +24,7 @@ const addEducation = ({ onChange, id, education, onDelete }) => {
         placeholder="year of graduation..." 
         value={education.graduationDate} 
       />
-      <button onClick={() => onDelete(id)} style={{color: 'green', fontWeight: '1000', backgroundColor: 'lightgray' }}>Delete</button>
+      <button onClick={() => onDelete(id)} className="delete">Delete</button>
       <br></br>
     </>
   )
