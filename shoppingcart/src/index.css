@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  border: 1px solid red;
+}
+/* 
+.shop {
+  display: flex;
+  flex-direction: row;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+} */
