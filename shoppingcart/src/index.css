@@ -15,7 +15,7 @@ code {
 * {
   border: 1px solid red;
 }
-/* 
+
 .shop {
   display: flex;
   flex-direction: row;
@@ -35,4 +35,4 @@ code {
 .buttons {
   display: flex;
   flex-direction: row;
-} */
+}
