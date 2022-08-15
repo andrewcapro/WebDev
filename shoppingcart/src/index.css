@@ -16,7 +16,7 @@ code {
   border: 1px solid red;
 }
 
-.shop {
+.shop, .cartpage {
   display: flex;
   flex-direction: row;
 }
@@ -35,4 +35,15 @@ code {
 .buttons {
   display: flex;
   flex-direction: row;
+}
+
+.button {
+  cursor: pointer;
+
+}
+
+.cartitem {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
 }
