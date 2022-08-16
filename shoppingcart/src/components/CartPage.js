@@ -1,7 +1,7 @@
 import Cart from './shopcomponents/Cart'
 
 export default function CartPage({ cartItems, setcartItems }) {  
-  const deleteCartItem = (id) => {
+  const deleteCartItem = (id, price) => {
     setcartItems((prevState) => {
       const newCart = prevState.items.filter(
         (itemsitem) => itemsitem.id !== id
@@ -10,7 +10,7 @@ export default function CartPage({ cartItems, setcartItems }) {
     })
     setcartItems(prevState => ({
       ...prevState,
-      finalCost: cartItems.finalCost - 50,
+      finalCost: cartItems.finalCost - price,
     }))
   }
 

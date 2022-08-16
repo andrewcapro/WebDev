@@ -10,7 +10,7 @@ export default function CartItem({ color, style, price, photo, id, onDelete }) {
         width="150"
       />
       <div className='buttons'>
-        <button onClick={() => onDelete(id)} className="button">DELETE FROM CART</button>
+        <button onClick={() => onDelete(id, price)} className="button">DELETE FROM CART</button>
       </div>
     </section>
   )

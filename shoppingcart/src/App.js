@@ -4,13 +4,12 @@ import CartPage from './components/CartPage'
 import NavBar from './NavBar'
 import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
 
 export default function App() {
 
   const [cartItems, setcartItems] = useState({
     finalCost: 0,
-    items: [{}] 
+    items: [] 
   })
 
   return (

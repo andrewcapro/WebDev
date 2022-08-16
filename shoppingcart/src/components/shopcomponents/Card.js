@@ -9,7 +9,7 @@ export default function Card({ color, style, price, photo, onAdd}) {
           width="300"
         />
         <div className='buttons'>
-            <button onClick={onAdd} className="button">Add To Cart</button>
+            <button onClick={() => onAdd(color, style, price, photo)} className="button">Add To Cart</button>
         </div>
     </section>
   )

@@ -2,16 +2,16 @@ import Items from './shopcomponents/Items'
 import { v4 as uuidv4 } from 'uuid'
 
 export default function Shop({ cartItems, setcartItems }) {
-  const addCartItem = () => {
+  const addCartItem = (color, style, price, photo) => {
     setcartItems((prevState) => ({
-      finalCost: cartItems.finalCost + 50,
+      finalCost: cartItems.finalCost + price,
       items: [
         ...prevState.items,
         {
-          item: 'blue',
-          style: 'croc',
-          price: 50,
-          photo: 'https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/207713_100_ALT140/crocs',
+          color: color,
+          style: style,
+          price: price,
+          photo: photo,
           id: uuidv4(),
         },
       ],
