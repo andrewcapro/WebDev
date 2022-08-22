@@ -143,7 +143,6 @@ export default function Items({ onAdd }) {
         </>
       )
     }
-    // console.log(id)
   }
 
   const [select, setSelect] = useState("all")
@@ -151,7 +150,7 @@ export default function Items({ onAdd }) {
   return (
     <>
       <div className="filter">
-        <select id={select} onChange={e=>setSelect(e.target.value)}>
+        <select id={select} onChange={e=>setSelect(e.target.value)} className="options">
           <option value="all">ALL</option>
           <option value="clogs">CLOGS</option>
           <option value='atclogs'>ALL TERRAIN CLOGS</option>
@@ -160,9 +159,6 @@ export default function Items({ onAdd }) {
       </div>
       <div className='items'>
         {determineDisplay(select)}
-        {/* {showClogs}
-        {showATClogs}
-        {showFlips} */}
       </div>
     </>
   )
