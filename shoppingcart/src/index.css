@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   font-weight: 800;
@@ -19,6 +19,51 @@ code {
     monospace;
 }
 
+.homediv {
+  height: 100vh;
+  background-color: gray;
+}
+
+.home {
+  background-color: white;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.nav {
+  background-color: gray;
+  text-align: center;
+  padding-bottom: 5vh;
+  padding-top: 15px;
+}
+
+.home-link, .items-link {
+  margin-right: 10vw;
+}
+
+.home-link, .items-link, .cart-link{
+  border-radius: 15px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: white;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: black;
+}
+
+.cart-name {
+  width: 25vw;
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+
+.cartitem {
+  border: 3px solid black;
+  border-radius: 10px;
+  align-items: center;
+}
+
 .shop {
   display: flex;
   flex-direction: column;
@@ -27,36 +72,84 @@ code {
 .cartpage {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  background-color: gray;
+  height: 100vh
 }
 
 .items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  background-color: gray;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  border-radius: 15px;
+  border: 3px solid black;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+  background-color: white;
 }
 
-.buttons {
+.buttons, .cart-buttons {
   display: flex;
   flex-direction: row;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+  border: 3px;
+}
+
+.checkout {
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: large;
+  padding: 1vmax;
+}
+
+.cart-buttons {
+  margin-top: 1vh;
+  margin-right: 1vw;
+}
+
+.card-name {
+  margin-top: 1vh;
+  margin-left: 1vw;
 }
 
 .button {
   cursor: pointer;
   border-radius: 5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .cartitem {
   display: flex;
   flex-direction: row;
   width: fit-content;
+  background-color: white;
 }
 
 .options {
-  align-content: center;
+  border: 3px solid black;
+}
+
+.filter {
+  padding-left: 2vw;
+  background-color: gray;
+  padding-bottom: 1vh;
+}
+
+.finalcost {
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: white;
+  text-align: center;
 }

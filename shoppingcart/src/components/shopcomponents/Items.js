@@ -38,28 +38,28 @@ export default function Items({ onAdd }) {
     allTerrainClogs: [
       {
         color: "Blue Gray",
-        style: "All-Terrain Clog",
+        style: "AT Clog",
         price: 55,
         photo: "https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/206340_0ID_ALT140/crocs",
         key: "bgray"
       },
       {
         color: "Black",
-        style: "All-Terrain Clog",
+        style: "AT Clog",
         price: 55,
         photo: "https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/206340_001_ALT140/crocs",
         key: "ablack"
       },
       {
-        color: "White / Multi",
-        style: "All-Terrain Clog",
+        color: "White",
+        style: "AT Clog",
         price: 55,
         photo: "https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/206340_94S_ALT140/crocs",
         key: "awhite"
       },
       {
-        color: "Slate Gray / Multi",
-        style: "All-Terrain Clog",
+        color: "Slate Gray",
+        style: "AT Clog",
         price: 55,
         photo: "https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/206340_0IE_ALT140/crocs",
         key: "asgray"

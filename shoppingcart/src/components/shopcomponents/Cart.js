@@ -9,7 +9,7 @@ export default function Cart({ cartItems, onDelete }) {
   return (
     <div className="cartitems">
       {showItems}
-      <h3>Final Cost <br></br> ${cartItems.finalCost}</h3>
+      <h3 className="finalcost">Final Cost <br></br> ${cartItems.finalCost}</h3>
       <button className='checkout'>Checkout</button>
     </div>
   )
